@@ -6,7 +6,7 @@ On my vm, a full hour timelapse in ffmpeg takes much more CPU activity (in % and
 
 a very dirty hack / script to run cron-powered grabbing every 5 seconds:
 
-```bash
+```console
 (sleep 5 && sh /root/ffmpeg_dahua.sh) &
 (sleep 10 && sh /root/ffmpeg_dahua.sh) &
 (sleep 15 && sh /root/ffmpeg_dahua.sh) &
@@ -32,7 +32,7 @@ a very dirty hack / script to run cron-powered grabbing every 5 seconds:
 
 Timelapsing script:
 
-```bash
+```console
 /usr/bin/mkdir /var/www/timelapse-min
 /usr/bin/mkdir /var/www/timelapse-vid
 datetime=$(/usr/bin/date +%Y-%m-%d-%H-%M-%S)
