@@ -24,7 +24,7 @@ a very dirty hack / script to run cron-powered grabbing every 5 seconds:
 ## /root/ffmpeg_dahua.sh
 
 ```console
-/usr/bin/ffmpeg -loglevel panic -rtsp_transport tcp -i "rtsp://admin:unior941337@172.30.10.237:554/cam/realmonitor?channel=1&subtype=0" -vframes 1 /var/www/grab.jpeg -y
+/usr/bin/ffmpeg -loglevel panic -rtsp_transport tcp -i "rtsp://admin:23456@172.30.20.3:554/cam/realmonitor?channel=1&subtype=0" -vframes 1 /var/www/grab.jpeg -y
 /usr/bin/cp -a /var/www/grab.jpeg "/var/www/grab-$(date +"%Y-%m-%d-%H-%M-%S").jpeg" > /dev/null
 ```
 
